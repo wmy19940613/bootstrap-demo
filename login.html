@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>登录</title>
+    <!--网页描述-->
+    <meta name="description" content="休闲时光咖啡无论是原料咖啡豆的采购、烘焙、酿制还是新鲜度方面，休闲时光遵循的都是本行业中最高的标准，以保证顾客在休闲时光喝到的每一杯咖啡都是“最完美的”!">
+    <!--网页关键字-->
+    <meta name="keywords" content=="休闲时光咖啡，咖啡烘焙，咖啡连锁店，烘焙、酿制">
+    <!--个人博客-->
+    <meta name="author" content="王梦媛，个人博客:https://wmy19940613.github.io/">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/coffee.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+        ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-custom navbar-fixed-top"  role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i><img style="position:relative;top:-40px;left:17px"src="img/logo.png"></a>
+        </div>
+        <!-- 收集导航链接、表单和其他内容切换 -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="index.html" >我的咖啡</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="cart.html">购物车</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="fenlei.html">商品分类</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="order.html">订单管理</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">联系客服</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.html">亲，请登录</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="registration.html">免费注册</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!--登陆页面-->
+  <div class="content">
+    <div class="form row" >
+      <form class="form-horizontal col-sm-offset-3 col-md- offset-3" id="login_form">
+        <h3 class="denglu">账号登录</h3>
+       <div class="col-sm-9">
+          <div class="form-group">
+            <i class="fa fa-user fa-lg"></i>
+            <input class="form-control required" type="text" placeholder="用户名" name="username" autofocus="autofocus" maxlength="20"/>
+          </div>
+          <div class="form-group">
+              <i class="fa fa-lock fa-lg"></i>
+              <input class="form-control required" type="password" placeholder="密码" name="password" maxlength="8"/>
+          </div>
+           <div class="form-group">
+               <i class="fa fa-pencil fa-lg"></i>
+               <input type="password" class="form-control required" placeholder="验证码" name="oldyzm" id="oldyzm" required>
+               <label style="font-size: 25px;" id="newyzm" name="newyzm"><%=Info.getCheckCode() %></label>
+               <label id="textyy"></label>
+           </div>
+          <div class="form-group1">
+             <label class="checkbox"style="color:#fff">
+               <input type="checkbox" name="remember" value="1" /> 记住密码
+               <a href="javascript:;" id="findpassword_btn" class="findpassword" >找回密码</a>
+            </label>
+          </div>
+            <br />
+            <div class="zhuce">
+            <a href="registration.html" id="register_btn" class="">免费注册</a>
+            </div>
+            <br/>
+          
+          <div class="form-group2">
+            <input type="submit" class="btn btn-success pull-right" value="登录"/>   </div>  
+         </div><!--col-sm-9 col-md-9结束-->
+      </form>
+    </div><!--form row结束-->
+     <div class="loginplace">
+          <span>使用合作网站登录:</span>
+         <a href="#"> <img src="img/login/QQ.png"></a>
+         <a href="#"><img src="img/login/微信.png"></a>
+      </div></div><!--content结束-->
+<!-- footer -->
+    <script src="js/jquery.1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    $(function()
+    {
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
+            $(".hover-bg .hover-text").css({'opacity':'1'});
+
+            $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+
+            $(".hover-bg .hover-text>i").css({'opacity':'1'});
+        }
+    });
+</script>
+</body>
+</html>

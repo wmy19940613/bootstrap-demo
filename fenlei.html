@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>商品分类</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fenlei.css">
+    <link rel="shortcut icon" href="img/coffee.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+        ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/fenlei.js"></script>
+    <script src="js/cookie.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- 导肮 -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background:#191919;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i><img style="position:relative;top:-40px;left:17px"src="img/logo.png"></a>
+        </div>
+        <!-- 导航链接、表单和其他内容切换 -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav" style="font-size: 14px">
+                <!-- 隐藏的li包括去除active类链接过去当滚动部分-->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="index.html" >我的咖啡</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="cart.html">购物车</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="fenlei.html">商品分类</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="order.html">订单管理</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">联系客服</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.html">亲，请登录</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="registration.html">免费注册</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<div class="container">
+    <!-- 轮播图 -->
+   <div class="wrap col-xs-12" id="wrap">
+    <div class="slide" id="slide">
+        <ul>
+            <li><a href="#"><img src="img/fenlei/01.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/fenlei/02.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/fenlei/03.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/fenlei/04.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/fenlei/05.jpg" alt=""/></a></li>
+        </ul>
+        <div class="arrow" id="arrow">
+            <a href="javascript:;" class="prev" id="arrLeft"></a>
+            <a href="javascript:;" class="next" id="arrRight"></a>
+        </div>
+    </div>
+   </div>
+ </div>
+  <!-- 商品 -->
+<div class="container">
+<div class="content">
+    <!--限时抢购-->
+    <div class="content-middle clearfix">
+        <!--加入购物车-->
+        <div class="mycar">
+            <a href="cart.html" class="car">我的购物车</a><i id="ccount">0</i>
+        </div>
+        <div class="content-head-top">
+            <h1>限时抢购:</h1>
+            <div class="time-item">
+                <span class="time-end">抢购结束</span>
+                <span id="day-show">0天</span>
+                <strong id="hour-show">0时</strong>
+                <strong id="minute-show">0分</strong>
+                <strong id="second-show">0秒</strong>
+            </div><!--倒计时模块-->
+        </div>
+        <div class="content-middle-ul clearfix list">
+            <div class="content-middle-ul-li">
+            <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/shopping1.png" class="middle-top-img"/>
+                    </dt>
+                        <dd class="shopping-des">冷萃冰咖啡</dd>
+                        <dd class="shopping-price">￥<span>60</span></dd>
+                        <dd class="shopping-go-in" >
+                            <button>添加购物车</button>
+                        </dd>
+            </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/shopping2.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">时光星冰粽</dd>
+                    <dd class="shopping-price">￥<span>45</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/shopping3.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">午后“轻”主张</dd>
+                    <dd class="shopping-price">￥<span>65</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/shopping3.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">焕新食</dd>
+                    <dd class="shopping-price">￥<span>55</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="all-shopping ">
+            <a href="details.html">查看全部商品</a>
+        </div>
+    </div>
+    <!--饮品咖啡-->
+    <div class="content-middle clearfix">
+        <div class="content-head-top">
+            <h1>饮品咖啡</h1>
+        </div>
+        <div class="content-middle-ul clearfix list">
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee1.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">清椰冰摇咖啡</dd>
+                    <dd class="shopping-price">￥<span>69</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee2.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">海盐蜂蜜风味玛奇朵</dd>
+                    <dd class="shopping-price">￥<span>89</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee3.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">薰衣草风味伯爵茶拿铁</dd>
+                    <dd class="shopping-price">￥<span>79</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee4.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">佛罗娜咖啡巧克力慕斯杯蛋糕</dd>
+                    <dd class="shopping-price">￥<span>49</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="all-shopping ">
+            <a href="details.html">查看全部商品</a>
+        </div>
+    </div>
+   <!--时光升级内馅-->
+    <div class="content-middle clearfix">
+        <div class="content-head-top">
+            <h1>时光升级内馅</h1>
+        </div>
+        <div class="content-middle-ul clearfix list">
+            <div class="content-middle-ul-li">
+            <dl class="  content-middle-ul-li-div" pid="1001">
+                <dt class="middle-ul-li-div-top">
+                    <img src="img/fenlei/coffee5.png" class="middle-top-img"/>
+                </dt>
+                <dd class="shopping-des">冷萃咖啡风味</dd>
+                <dd class="shopping-price">￥<span>50</span></dd>
+                <dd class="shopping-go-in" >
+                    <button>添加购物车</button>
+                </dd>
+            </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee6.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">茶瓦纳™桃桃风味</dd>
+                    <dd class="shopping-price">￥<span>79</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee7.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">椰子斑斓风味</dd>
+                    <dd class="shopping-price">￥<span>79</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/coffee8.png" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">蓝莓优格风味</dd>
+                    <dd class="shopping-price">￥<span>88</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="all-shopping ">
+            <a href="details.html">查看全部商品</a>
+        </div>
+    </div>
+   <!--时光焕新食-->
+    <div class="content-middle clearfix">
+        <div class="content-head-top">
+            <h1>时光焕新食</h1>
+        </div>
+        <div class="content-middle-ul clearfix list">
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/food1.jpg" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">法式香酥可颂</dd>
+                    <dd class="shopping-price">￥<span>55</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/food2.jpg" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">香浓巧克力可颂</dd>
+                    <dd class="shopping-price">￥<span>45</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/food3.jpg" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">旋风玉桂酥</dd>
+                    <dd class="shopping-price">￥<span>45</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content-middle-ul-li">
+                <dl class="  content-middle-ul-li-div" pid="1001">
+                    <dt class="middle-ul-li-div-top">
+                        <img src="img/fenlei/food4.jpg" class="middle-top-img"/>
+                    </dt>
+                    <dd class="shopping-des">牛肉薯蓉派</dd>
+                    <dd class="shopping-price">￥<span>39</span></dd>
+                    <dd class="shopping-go-in" >
+                        <button>添加购物车</button>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="all-shopping ">
+            <a href="details.html">查看全部商品</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- footer -->
+<nav id="footer">
+    <div class="container">
+        <div class="pull-left fnav">
+            <p>Copyright &copy; 2017 作者：王梦媛. 前端工程师
+                <a style='color:#F4D03F' href="https://wmy19940613.github.io/" target="_blank" title="前端博客">个人博客</a> </p>
+        </div>
+        <div class="pull-right fnav">
+            <ul class="footer-social">
+                <li><a href="#"><i class="icon iconfont">&#xe66e;</i></a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe629;</i></a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe616;</i></a></li>
+
+                <li><a href="#"><i class="icon iconfont">&#xe66b;</i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+<script src="js/jquery.1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/animate.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+<!--
+    描述：本页面的js操作
+-->
+<script type="text/javascript" src="js/index.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    $(function()
+    {
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
+            $(".hover-bg .hover-text").css({'opacity':'1'});
+
+            $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+
+            $(".hover-bg .hover-text>i").css({'opacity':'1'});
+        }
+
+    });
+
+</script>
+<script>
+    var config = [
+        {
+            width: 400,
+            top: 20,
+            left: 50,
+            opacity: 0.2,
+            zIndex: 2
+        },//0
+        {
+            width: 600,
+            top: 70,
+            left: 0,
+            opacity: 0.8,
+            zIndex: 3
+        },//1
+        {
+            width: 800,
+            top: 100,
+            left: 200,
+            opacity: 1,
+            zIndex: 4
+        },//2
+        {
+            width: 600,
+            top: 70,
+            left: 600,
+            opacity: 0.8,
+            zIndex: 3
+        },//3
+        {
+            width: 400,
+            top: 20,
+            left: 750,
+            opacity: 0.2,
+            zIndex: 2
+        }//4
+    ];
+    var wrap=document.getElementById("wrap");
+    var slide=document.getElementById("slide");
+    var ul=slide.children[0];
+    var lis=ul.children;
+    var arrow=document.getElementById("arrow");
+    var arrLeft=arrow.children[0];
+    var arrRight=arrow.children[1];
+    wrap.onmouseover=function(){
+        animate(arrow,{opacity:1});
+    }
+    wrap.onmouseout=function(){
+        animate(arrow,{opacity:0});
+    }
+    change();
+    var flag=true;
+    arrRight.onclick=function(){
+        if(flag){
+            flag=false;
+            var temp=config.shift();
+            config.push(temp);
+            change();
+        }
+    }
+    arrLeft.onclick=function(){
+        if(flag){
+            flag=false;
+            var temp=config.pop();
+            config.unshift(temp);
+            change();
+
+        }
+    }
+    function change(){
+        for (var  i= 0; i<lis.length;i ++) {
+          animate(lis[i],config[i],function(){
+              flag=true;
+          });
+        }
+    }
+
+
+
+</script>
+
+</html>

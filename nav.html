@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <!--网页描述-->
+    <meta name="description" content="休闲时光咖啡无论是原料咖啡豆的采购、烘焙、酿制还是新鲜度方面，休闲时光遵循的都是本行业中最高的标准，以保证顾客在休闲时光喝到的每一杯咖啡都是“最完美的”!">
+    <!--网页关键字-->
+    <meta name="keywords" content=="休闲时光咖啡，咖啡烘焙，咖啡连锁店，烘焙、酿制">
+    <!--个人博客-->
+    <meta name="author" content="王梦媛，个人博客:https://wmy19940613.github.io/">
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="img/coffee.ico" type="image/x-icon">
+    <!--引入外链样式-->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <!--font-awesome字体图标-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+        ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
+    <!--兼容ie-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation"style="background:#191919;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!--logo,跳转到页面顶部-->
+            <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i><img style="position:relative;top:-40px;left:17px"src="img/logo.png"></a>
+        </div>
+        <!-- 右侧导航链接、表单和其他内容切换 -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- 隐藏的li包括去除active类链接过去当滚动部分-->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="index.html" >我的咖啡</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="cart.html">购物车</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="fenlei.html">商品分类</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="order.html">订单管理</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">联系客服</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.html">亲，请登录</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="registration.html">免费注册</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/myScript.js"></script>
+<script src="js/md5.js"></script>
+<!-- Javascrxipts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(function()
+    {
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
+            $(".hover-bg .hover-text").css({'opacity':'1'});
+
+            $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+
+            $(".hover-bg .hover-text>i").css({'opacity':'1'});
+        }
+    });
+</script>
+</html>

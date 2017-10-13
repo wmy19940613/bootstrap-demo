@@ -1,0 +1,79 @@
+ body{
+       
+         background-image: url(../img/login/denglu4.jpg);
+         background-size: 100%;
+      }
+      .form{
+          background: rgba(255,255,255,0.2);
+          width:36%;
+          margin-top:10%;
+          margin-bottom: 2%;
+          margin-left: 55% !important;
+          border:1px solid #77584a;
+    }
+
+  #login_form{
+        display: block;
+      }
+#register_form{
+        display: none;
+      }
+.fa{
+    display: inline-block;
+    top: 27px;left: 6px;
+    position: relative;
+    color: #ccc;
+  }
+    h3{
+   text-align: center;
+   margin-right:20%;
+
+  }
+.denglu{
+    color:#fff;
+}
+.form-group input{
+  text-align: center;
+  width: 80%;
+  height: 30%;
+  margin:1% auto;
+}
+.form-group1{
+ margin-left:14%;
+    margin-top: 0%;
+  }
+.form-group1 input{
+float:left;
+}
+.form-group1 a{
+ float:right;
+ margin-right:-118%;
+}
+.zhuce a{
+   margin-left:-8%;
+}
+.form-group2 input{
+  width: 90%;
+  text-align: center;
+  margin: 3% auto;
+}
+
+.loginplace{
+ width: 41%;
+ height:20%;
+  margin:0 auto;
+    margin-left: 50%;
+  text-align: center;
+}
+.loginplace span{
+  font-size: 100%;
+  font-family: "宋体";
+    color:#fff;
+}
+.loginplace img{
+  height:8%;
+  width:7%;
+  margin-left:2%;
+  text-align: center;
+}
+
